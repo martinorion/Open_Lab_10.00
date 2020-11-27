@@ -25,10 +25,23 @@ namespace Open_Lab_10._00
 
 
 
+            Book LOTR2 = new Book();
 
 
+            Book LOTR3 = new Book("Kravina", 60);
+
+
+            Book HOBIT = new Book("Somarina", 88, "Roman", "Botto", 2000);
+
+            Console.WriteLine("");
+            Console.WriteLine("LOTR2: " + LOTR2.ToString());
+            Console.WriteLine("");
+            Console.WriteLine("LOTR3: " + LOTR3.ToString());
+            Console.WriteLine("");
+            Console.WriteLine("HOBIT: " + HOBIT.ToString());
 
 
         }
+
     }
 }
