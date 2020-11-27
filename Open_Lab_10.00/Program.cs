@@ -7,13 +7,26 @@ namespace Open_Lab_10._00
         static void Main(string[] args)
         {
             Book LOTR = new Book();
-            LOTR.Author("Holena");
-            LOTR.Category("Tutorial");
-            LOTR.Pages(88);
-            LOTR.RealeaseDate("2020");
-            LOTR.Title("Armagedon");
-            Console.WriteLine(LOTR.ToString());
-            Console.ReadKey();
+
+            LOTR.author = "Holena";
+            Console.WriteLine(LOTR.author);
+
+            LOTR.category = "Turorial";
+            Console.WriteLine(LOTR.category);
+
+            LOTR.pages += 5;
+            Console.WriteLine(LOTR.pages);
+
+            LOTR.releaseDate += 1400;
+            Console.WriteLine(LOTR.releaseDate);
+
+            LOTR.title = "Armagedon";
+            Console.WriteLine(LOTR.title);
+
+
+
+
+
 
 
         }
