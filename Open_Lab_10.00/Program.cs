@@ -6,10 +6,15 @@ namespace Open_Lab_10._00
     {
         static void Main(string[] args)
         {
-            Book LOTR = new Book("Rozprávka", 60);
+            Book LOTR = new Book();
+            LOTR.Author("Holena");
+            LOTR.Category("Tutorial");
+            LOTR.Pages(88);
+            LOTR.RealeaseDate("2020");
+            LOTR.Title("Armagedon");
+            Console.WriteLine(LOTR.ToString());
+            Console.ReadKey();
 
-            Console.WriteLine(LOTR.title);
-            
 
         }
     }
