@@ -6,15 +6,24 @@ namespace Open_Lab_10._00
 {
     class Book
     {
+        public static List<string> categoryList = new List<string>() { "detské", "romantické", "náučné", "sci-fi", "dobrodružné" };
 
+        private string Title;
         private int Pages;
-
+        private string Category;
+        private string Author;
         private int ReleaseDate;
 
 
         public string author { get; set; }
 
-        public string category { get; set; }
+        public string category
+        {
+
+
+           set => Category = value;
+        }
+
         public int pages
         {
             get => this.Pages;
@@ -80,7 +89,7 @@ namespace Open_Lab_10._00
 
         public override string ToString()
         {
-            return $"Title:{this.title}, Pages:{this.pages}, Category:{this.category}, Author:{this.author}, RealeaseDate:{this.releaseDate}";
+            return $"Title:{this.title}, Pages:{this.Pages}, Category:{this.Category}, Author:{this.author}, RealeaseDate:{this.ReleaseDate}";
 
         }
 

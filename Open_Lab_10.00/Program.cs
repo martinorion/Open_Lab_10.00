@@ -12,7 +12,7 @@ namespace Open_Lab_10._00
             Console.WriteLine(LOTR.author);
 
             LOTR.category = "Turorial";
-            Console.WriteLine(LOTR.category);
+            Console.WriteLine(Book.categoryList[0]);
 
             LOTR.pages += 5;
             Console.WriteLine(LOTR.pages);
@@ -31,7 +31,7 @@ namespace Open_Lab_10._00
             Book LOTR3 = new Book("Kravina", 60);
 
 
-            Book HOBIT = new Book("Somarina", 88, "Roman", "Botto", 2000);
+            Book HOBIT = new Book("Somarina", 88, Book.categoryList[0], "Botto", 2000);
 
             Console.WriteLine("");
             Console.WriteLine("LOTR2: " + LOTR2.ToString());
